@@ -68,7 +68,7 @@ const handleSendMsg = () => {
   };
 
   $.ajax({
-    url: "http://localhost:8080/api/training/predict",
+    url: "http://14.225.192.182:8080/api/training/predict",
     type: "POST",
     contentType: "application/json",
     data: JSON.stringify(request),
@@ -89,3 +89,4 @@ const handleSendMsg = () => {
     },
   });
 };
+handleSendMsg();
